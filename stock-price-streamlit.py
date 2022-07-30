@@ -33,7 +33,7 @@ st.subheader('---------------------------------------------------------')
 
 #-----------------------------------------------------------------------------------------------------------
 
-st.subheader('Genric Observations')
+st.subheader('General Observations')
 st.write('Total Columns:',df.shape[1])
 st.write('Total Data Points for Each Column:',df.shape[0])
 st.write('First Data Point from:',df.index[0])
