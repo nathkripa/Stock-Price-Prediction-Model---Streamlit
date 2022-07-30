@@ -102,7 +102,7 @@ st.write("Note: In some of the stock data, prices were very low in intial 5-10 y
 
 date=st.text_input("Enter a starting date (YYYY-MM-DD)",df.index[1200])
 
-feature= st.selectbox('Select the feature you want to model:', feat_list[:4],3)
+feature= st.selectbox('Select the Category you want to model:', feat_list[:4],3)
 
 df1=df.loc[date:]
 data=pd.DataFrame(df1[feature])
@@ -245,7 +245,7 @@ x= st.number_input('Enter the value of X(between 3-100):',3,key=0)
 
 date=st.text_input("Enter a starting date (YYYY-MM-DD)",df.index[1200],key=2)
 
-feature= st.selectbox('Select the feature you want to model:', feat_list[:4],0)
+feature= st.selectbox('Select the Category you want to model:', feat_list[:4],0)
 
 df1=df.loc[date:]
 data=pd.DataFrame(df1[feature])
