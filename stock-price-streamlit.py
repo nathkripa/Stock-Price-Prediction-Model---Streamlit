@@ -55,7 +55,7 @@ f2 = st.selectbox('Select the time-period:', ['Daily','Monthly(Average)','Yearly
 fig=plt.figure(figsize=(15,8))
 if f2=='Daily' :
     values = st.slider('Select the range',0,len(df), (0,len(df)))
-    plt.plot(df.index[values[0]:values[1]], df[f1][values[0]:values[1]])
+    plt.plot(df[f1].index[values[0]:values[1]], df[f1][values[0]:values[1]])
 elif f2=='Monthly(Average)':
     plt.plot(df.resample(rule='BM').mean()[f1])
 else:
